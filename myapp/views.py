@@ -38,3 +38,5 @@ def locate_bicycle(request):
         return JsonResponse({'bicycles': nearest_bicycles})
     else:
         return JsonResponse({'error': 'No bicycles found'})
+
+# https://syaamex.hashnode.dev/devops-project-jenkins-cicd#heading-step-0-creating-andamp-connecting-an-ec2-instance
