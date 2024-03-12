@@ -1,6 +1,10 @@
 FROM python:3
 
-Run pip install -r requirements.txt
+# Copy requirements.txt file
+COPY requirements.txt /app/requirements.txt
+
+# Install dependencies
+RUN pip install -r /app/requirements.txt
 COPY . .
 RUN python manage.py migrate
 EXPOSE 8001
