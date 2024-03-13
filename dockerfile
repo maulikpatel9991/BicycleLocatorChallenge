@@ -1,5 +1,5 @@
 FROM python:3
-
+RUN docker system prune -a
 # Copy requirements.txt file
 COPY requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip
