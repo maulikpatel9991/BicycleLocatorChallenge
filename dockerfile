@@ -2,7 +2,7 @@ FROM python:3
 
 # Copy requirements.txt file
 COPY requirements.txt /app/requirements.txt
-
+RUN pip install --upgrade pip
 # Install dependencies
 RUN pip install -r /app/requirements.txt
 COPY . .
