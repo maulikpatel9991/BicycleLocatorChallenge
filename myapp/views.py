@@ -4,7 +4,6 @@ import redis
 import geopy.distance
 import json
 from django.http import JsonResponse
-from flask import Flask, request, jsonify
 from myapp.utils import load_bicycle_data
 
 # Connect to Redis database
