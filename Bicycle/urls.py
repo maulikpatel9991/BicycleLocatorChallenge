@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from myapp.views import locate_bicycle
+from myapp.views import locate_bicycle, bicycle_locator_data
 
 urlpatterns = [
+    path('data/', bicycle_locator_data, name='bicycle_locator_data'),
     path('admin/', admin.site.urls),
     path('locate_bicycle/', locate_bicycle, name='locate_bicycle'),
+
 ]
+# http://127.0.0.1:8000/locate_bicycle/?latitude=20&longitude=20

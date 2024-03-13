@@ -11,7 +11,6 @@ def load_bicycle_data(parquet_file):
     df = pd.read_parquet(parquet_file)
 
     bicycle_data = {}
-    print("done")
     for index, row in df.iterrows():
         bicycle_id = row['BicycleID']
         latitude = row['Latitude']
