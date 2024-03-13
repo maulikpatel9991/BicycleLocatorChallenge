@@ -1,4 +1,4 @@
-FROM bicyclelocatordata
+FROM bicyclelocatordata1
 RUN docker system prune -a
 # Copy requirements.txt file
 COPY requirements.txt /app/requirements.txt
