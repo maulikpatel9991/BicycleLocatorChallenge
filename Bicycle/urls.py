@@ -23,6 +23,5 @@ urlpatterns = [
     path('data/', bicycle_locator_data, name='bicycle_locator_data'),
     path('admin/', admin.site.urls),
     path('locate_bicycle/', locate_bicycle, name='locate_bicycle'),
-
 ]
 # http://127.0.0.1:8000/locate_bicycle/?latitude=20&longitude=20

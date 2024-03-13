@@ -7,7 +7,10 @@ import pandas as pd
 
 
 
-def load_bicycle_data(number):
+def load_bicycle_data(number: int)-> dict:
+    """
+    Data add in redis server
+    """
     # Connect to Redis database
     redis_db = redis.StrictRedis(host='redis-15165.c301.ap-south-1-1.ec2.cloud.redislabs.com',
                                  port=15165,
@@ -21,5 +24,5 @@ def load_bicycle_data(number):
         longitude = 20
         redis_db.set(bicycle_id, f"{latitude},{longitude}")
 
-
+# Call function to load bicycle data
 load_bicycle_data(10)
