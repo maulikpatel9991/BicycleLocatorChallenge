@@ -1,4 +1,4 @@
-FROM python:31
+FROM python:3
 RUN docker system prune -a
 # Copy requirements.txt file
 COPY requirements.txt /app/requirements.txt
